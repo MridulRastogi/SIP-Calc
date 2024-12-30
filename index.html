@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIP Investment Calculator (Indian Numbering System)</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <div class="container">
+        <h2>SIP Investment Calculator</h2>
+        
+        <div class="inputs">
+            <label for="investment">Investment/Month:</label>
+            <input type="number" id="investment" class="input-field" placeholder="Enter monthly investment" required>
+
+            <label for="interest">Rate of Interest (%):</label>
+            <input type="number" id="interest" class="input-field" placeholder="Enter annual interest rate" required>
+
+            <label for="time">Time (in years):</label>
+            <input type="number" id="time" class="input-field" placeholder="Enter time period in years" required>
+        </div>
+
+        <div class="result">
+            <div class="result-row">
+                <span class="label">Total Investment</span>
+                <span class="value" id="total-investment">0</span>
+            </div>
+            <div class="result-row">
+                <span class="label">Final Amount</span>
+                <span class="value" id="final-amount">0</span>
+            </div>
+            <div class="result-row">
+                <span class="label">Amount Gained</span>
+                <span class="value" id="amount-gained">0</span>
+            </div>
+        </div>
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

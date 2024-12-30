@@ -1,0 +1,131 @@
+/* General Styles */
+body, h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0056b3;
+    line-height: 1.6;
+}
+
+/* Container Styles */
+.container {
+    max-width: 300px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 1.0);
+    border: 2px solid #007BFF;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* .investment .interest .time {
+    font-size: 50px;
+} */
+
+.total-investment .final-amount .amount-gained {
+    justify-items: end;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Input and Textarea Fields */
+.input-field,
+textarea {
+    width: calc(100% - 22px); /* Account for padding and border */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #007BFF;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input-field:focus,
+textarea:focus {
+    border-color: #0056b3;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.6);
+}
+
+/* Textarea Specific Styles */
+textarea {
+    resize: vertical, horizontal; /* Allow vertical resizing only */
+    height: 10px; /* Default height */
+    width: fit-content;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+textarea::placeholder {
+    color: #aaa;
+    font-style: italic;
+}
+
+/* Result Section */
+/* .result {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 2px solid #007BFF;
+    border-radius: 5px;
+}
+
+.result span {
+    font-weight: bold;
+}
+
+.result p {
+    margin: 10px 0;
+} */
+
+
+.result {
+    margin-top: 10px; /* Space from inputs */
+    margin-bottom: 6px;
+    padding: 15px; /* Padding around the results */
+    background-color: #f9f9f9;
+    border: 2px solid #007BFF;
+    border-radius: 10px;
+}
+
+.result-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px; /* Space between rows */
+    padding: 5px 0; /* Vertical padding within rows */
+    font-size: 16px; /* Uniform font size */
+    color: #333; /* Text color */
+}
+
+.label {
+    font-weight: bold;
+    flex: 1; /* Allocate equal space */
+    text-align: left;
+}
+
+.value {
+    flex: 1; /* Allocate equal space */
+    text-align: right;
+    font-weight: bold;
+    color: #007BFF; /* Highlight values */
+}
