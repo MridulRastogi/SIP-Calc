@@ -1,5 +1,8 @@
 function formatIndianNumber(number) {
     let numStr = number.toString();
+    console.log(numStr);
+    if (numStr.length <= 3) 
+        return numStr;
     let lastThreeDigits = numStr.slice(-3); // Get the last 3 digits
     let remainingDigits = numStr.slice(0, numStr.length - 3); // Get the remaining digits
 
